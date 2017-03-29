@@ -7,10 +7,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
    run, notepad.exe                        ; Run the program notepad.exe when you press Ctrl & n
 Return                                     ; This ends the hotkey. The code below this will not get triggered.
 
-^j::
-	Send, My First Script
-Return
-
 ::mcr::
 	Send, `::id::{enter}{tab}Send,{enter}{backspace}Return{up 2}{left 2}`
 Return
@@ -56,7 +52,7 @@ Return
 Return
 
 ::feliks::
-	Send, Feliks Zemdegs{enter}
+	Send, Feliks zemdegs{enter}
 Return
 
 ::jambu::
@@ -77,6 +73,10 @@ Return
 
 ::maskapaic::
 	Send, Cathay pacific{enter} China southern{enter} Copa airlines{enter}
+Return
+
+:*:mikro::
+	Send, mikro{enter} makro{enter}
 Return
 
 ::morse::
@@ -149,20 +149,51 @@ Return
 	Send, Merkurius{enter} Mars{enter}
 Return
 
-;;[2] Nama-nama hewan
+; [2] Nama-nama hewan
 ;=====================================================================================================================
+::id2a::
+	Send, ayam{enter} anjing{enter} angsa{enter} alap alap{enter} aphid{enter} ayam kate{enter} anoa{enter}
+Return
 ::id2b::
 	Send, Beruang{enter} badak{enter} bebek{enter} babi{enter} burung{enter} buaya{enter} biawak{enter} bangau{enter} banteng{enter} berangberang{enter} bison{enter} bunglon{enter} bengkarung{enter} beruk{enter} biribiri{enter} betet{enter} burunghantu{enter} belatung{enter} bulubabi{enter} blekok{enter} bekantan{enter} burunggereja{enter} belut{enter} beo{enter}
+Return
+::id2c::
+	Send, cicak{enter} capung{enter} cacing{enter} cendrawasih{enter} cumicumi{enter} cheetah{enter} cucakrawa{enter} codot{enter} cupang{enter} cerek{enter} cere{enter}
+Return
+::id2d::
+	Send, domba{enter} duyung{enter} dara{enter}
+Return
+::id2e::
+	Send, elang{enter} entok{enter}
+Return
+::id2g::
+	Send, gurita{enter} gajah{enter} gapih{enter} gelatik{enter} garuda{enter} gorila{enter} gurame{enter} gagak{enter}
+Return
+::id2h::
+	Send, harimau{enter} hiena{enter} hiu{enter} hamster{enter}
+Return
+::id2i::
+	Send, ikan{enter} itik{enter} iguana{enter} 
+Return
+::id2j::
+	Send, jerapah{enter} jangkrik{enter} jalak{enter}
+Return
+::id2k::
+	Send, kadal{enter} kasuari{enter} kurakura{enter} kutu{enter} koala{enter} kudanil{enter} kalong{enter} kerapu{enter} kakatua{enter} kera{enter} kenari{enter} katak{enter} kumbang{enter} kakiseribu{enter} kelelawar{enter} koi{enter} kampret{enter} kuskus{enter} kalkun{enter}
+Return 
+; kerbau{enter}, kuda{enter}, kijang{enter}, kalajengking{enter}, kerbau{enter}, kelinci{enter}, kerang{enter}, kepiting{enter}, keong{enter}, kambing{enter}, kecebong{enter}
+::id2n::
+	Send, ngengat{enter} nyamuk{enter} nila{enter}
 Return
 ::id2u::
 	Send, ular{enter} ularsendok{enter} udang{enter} unta{enter} undurundur{enter} ularderik{enter} uburubur{enter} ulat{enter}
 Return
 ;=====================================================================================================================
 
-;;[3] Hewan-hewan mamalia
+; [3] Hewan-hewan mamalia
 ;=====================================================================================================================
 ::id3s::
-	Send, Sapi{enter} Singa{enter} Serigala{enter} Siamang{enter} Sigung{enter}
+	Send, Sapi{enter} Singa{enter} Serigala{enter} Siamang{enter} Sigung{enter} Simpanse{enter}
 Return
 ::id3b::
 	Send, berangberang{enter} bebek{enter} babi{enter} biturung{enter}
@@ -172,10 +203,19 @@ Return
 Return
 ;=====================================================================================================================
 
-;;[4] Nama negara di dunia
+; [4] Nama negara di dunia
 ;=====================================================================================================================
+::id4a::
+	Send, australia{enter} austria{enter} azerbaijan{enter} albania{enter} afrikaselatan{enter} afrikatengah{enter} arabsaudi{enter} amerika serikat{enter} argentina{enter} armenia{enter} andorra{enter} aljazair{enter} afganistan{enter}
+Return
 ::id4b::
-	Send, Bahama{enter} Belarus{enter} Bhutan{enter} Bangladesh{enter} Burkinafaso{enter}
+	Send, Bahama{enter} Belarus{enter} Bhutan{enter} Bangladesh{enter} Burkinafaso{enter} Belgia{enter} belanda{enter}
+Return
+::id4c::
+	Send, China{enter} chad{enter} ceko{enter} chili{enter}
+Return
+::id4d::
+	Send, Denmark{enter} Djibouti{enter} Dominika{enter}
 Return
 ::id4h::
 	Send, hongaria{enter} honduras{enter} haiti{enter}
@@ -230,10 +270,10 @@ Return
 Return
 ;=====================================================================================================================
 
-:*:id8j::
+::id8j::
 	Send, jambu{enter} jeruk{enter} jambu air{enter} jeruk nipis{enter} jeruk purut{enter} jeruk bali{enter} jambu mede{enter} jeruk keprok{enter} jambu batu{enter} jambu semarang{enter} jambu mawar{enter} jeruk jepara{enter} jengkol{enter} jeruk kingkit{enter} jambu bol{enter}
 Return
-:*:id8n::
+::id8n::
 	Send, Nanas{enter} Nangka{enter} Naga{enter} Nektarin{enter} Namnam{enter} 
 Return
 :*:id8u::
@@ -243,12 +283,18 @@ Return
 ::id9a::
 	Send, Avocado{enter} Apple{enter} Apricot{enter}
 Return
+::id9j::
+	Send, juniper berry{enter} jujube{enter} jambul{enter} jabuticaba{enter} jackfruit{enter}
+Return
 ::id9n::
 	Send, nance{enter} nectarine{enter}
 Return
 
 ::id10e::
 	Send, ecko{enter} etnies{enter}
+Return
+::id10l::
+	Send, louboutine{enter} lakai{enter}
 Return
 
 ;aliran Musik
@@ -264,15 +310,35 @@ Return
 ::id11j::
 	Send, jazz{enter} j-pop{enter} j-rock{enter}
 Return
+::id11n::
+	Send, new age{enter}
+Return
 ::id11p::
 	Send, pop{enter}
+Return
+::id11r::
+	Send, rock{enter} reggae{enter} r&b{enter} rap{enter}
+Return
+
+::id12m::
+	Send, mall puri indah{enter} margo city{enter} mall kelapa gading{enter} mall alam sutera{enter} mangga dua square{enter} mall taman anggrek
+Return
+
+::id13a::
+	Send, atletik{enter} angkat besi{enter} american footbal{enter}
+Return
+::id13l::
+	Send, lari{enter}
 Return
 
 ::id14k::
 	Send, kitty pryde{enter} kingpin{enter} ka-zar{enter} karolina dean{enter}
 Return
+::id14n::
+	Send, nico minoru{enter} namor{enter} nickfury{enter} nightcrawler{enter} northstar{enter} norman osborn{enter}
+Return
 ::id14s::
-	Send, Spiderman{enter} Scarlett witch{enter} Silver samurai{enter} Shaman{enter} Sabretooth{enter} Siryn{enter}
+	Send, Spiderman{enter} Scarlett witch{enter} Silver samurai{enter} Shaman{enter} Sabretooth{enter} Siryn{enter} Sunspot{enter} Silver surfer{enter} Stinger{enter} Storm{enter} Sentinels{enter} Sasquatch{enter} Stepford cuckoos{enter}
 Return
 
 ::id15c::
@@ -289,6 +355,9 @@ Return
 Return
 ::id15w::
 	Send, Woodrow wilson{enter} William taft{enter} William Harrison{enter} Warren harding{enter} William mckinley{enter}
+Return
+::id15z::
+	Send, Zachary Taylor{enter}
 Return
 
 ::id16b:: ;3
@@ -308,11 +377,18 @@ Return
 	Send, sony{enter} samsung{enter} sanyo{enter} smartfren{enter} sagetel{enter}
 Return
 
+::id19t::
+	Send, tvr{enter}
+Return
+
+::id22a::
+	Send, austin{enter} aston martin{enter}
+Return
 ::id22m::
 	Send, mg{enter} morgan{enter} mini{enter} morris{enter}
 Return
 
-::id23::
+::id23s::
 	Send, Soekarno{enter} Soeharto{enter} Susilo bambang yudhoyono
 Return
 
@@ -320,8 +396,19 @@ Return
 	Send, Sutiyoso{enter} soeprapto{enter} soerjadi soedirdja{enter} soewirjo{enter} soemarno sosroatmodjo{enter} sjamsuridjal{enter}
 Return
 
+::id25l::
+	Send, last child{enter} letto{enter} legend bee{enter} lipstick{enter} log guns{enter} lyla{enter} la luna{enter}
+Return
+::id25u::
+	Send, Underground indonesia (pas)
+Return
+
 ::id26t::
 	Send, tokek{enter}
+Return
+
+::id27t::
+	Send, the great wall{enter} taj mahal{enter}
 Return
 
 ::id28d::
@@ -337,26 +424,43 @@ Return
 	Send, Old man jenkins{enter}
 Return
 ::id28p::
-	 Send, Patrick{enter} Plankton{enter} Painty the pirate{enter} Potty
+	Send, Patrick{enter} Plankton{enter} Painty the pirate{enter} Potty
 Return
 
-::id29::
+::id29y::
 	Send, Yasuo{enter}
+Return
+::id29s:: ;complete
+	Send, suneo{enter} shizuka{enter} sunetsugu{enter} sunetaro{enter} saiko{enter} sunekichi{enter}
+Return
+
+::id30a::
+	Send, Arsenal{enter}
+Return
+::id30m::
+	Send, manchester united{enter} manchester city{enter} middlesbrough{enter}
+Return
+::id30s::
+	Send, Stoke city{enter} southampton{enter}
 Return
 
 ::id31j::
-	Send, Jay garrick{enter} jimmy olsen{enter} jason todd{enter}
+	Send, jay garrick{enter} jimmy olsen{enter} jason todd{enter}
+Return
+
+::id32::
+	Send, jepang{enter}
 Return
 
 ::id33h:: ;merk sabun
 	Send, harmony{enter}
 Return
 
-::id34s::
-	Send, Song ji hyo{enter}
-Return
 ::id34h::
 	Send, haha{enter}
+Return
+::id34s::
+	Send, Song ji hyo{enter}
 Return
 
 ::id35e::
@@ -365,15 +469,24 @@ Return
 ::id35s::
 	Send, sunsilk{enter}
 Return
+::id35t::
+	Send, tresemme{enter}
+Return
 
 ::id36a::
 	Send, apink bnn{enter} as one{enter}
+Return
+::id36d::
+	Send, dal shabet{enter}
 Return
 ::id36g::
 	Send, girls district{enter} gp basic{enter} gangkiz{enter} gavy nj{enter} glam{enter}
 Return
 ::id36o::
 	Send, orange caramel{enter}
+Return
+::id36w::
+	Send, wonder girls{enter}
 Return
 
 ::id37h::
@@ -385,7 +498,7 @@ Return
 	Send, alligator{enter}
 Return
 ::id38b::
-	Send, buaya{enter} bunglo{enter}
+	Send, buaya{enter} bunglon{enter}
 Return
 ::id38g::
 	Send, gila monster{enter}
@@ -417,13 +530,16 @@ Return
 ::id41s::
 	Send, Susi pudjiastuti{enter} Siti nurbaya bakar{enter} Sri mulyani indrawati{enter}
 Return
+::id41y::
+	Send, Yohana Susana Yambise{enter}
+Return
 
 ::id42s::
 	Send, Sakura{enter} Sarimi{enter} Supermi{enter} Sedaap{enter} Selera rakyat
 Return
 
 ::id43:: ;Judul-judul buku Harry potter
-	Send, Harry Potter and the Philosopher's Stone{enter}Harry Potter and the Chamber of Secrets{enter} Harry Potter and the Prisoner of Azkaban{enter}Harry Potter and the Goblet of Fire{enter}Harry Potter and the Order of the Phoenix{enter} Harry Potter and the Half-Blood Prince{enter}Harry Potter and the Deathly Hallows - part 1{enter}Harry Potter and the Deathly Hallows - part 2{enter}
+	Send, Harry Potter and the Philosophers Stone{enter}Harry Potter and the Chamber of Secrets{enter}Harry Potter and the Prisoner of Azkaban{enter}Harry Potter and the Goblet of Fire{enter}Harry Potter and the Order of the Phoenix{enter}Harry Potter and the Half-Blood Prince{enter}Harry Potter and the Deathly Hallows - part 1{enter}Harry Potter and the Deathly Hallows - part 2{enter}
 Return
 
 ::id44::
@@ -493,6 +609,9 @@ Return
 	Send, cenat-cenut{enter}
 Return
 
+::id57k::
+	Send, ketupat{enter} kue kering{enter}
+Return
 ::id57o::
 	Send, opor ayam{enter}
 Return
@@ -503,6 +622,12 @@ Return
 
 ;[59] Nama-nama senyawa kimia
 ;=====================================================================================================================
+:*:id59a::
+	Send, asam klorida{enter} aluminium karbonat{enter} asam asetat{enter} asam sulfat{enter} amonium nitrat{enter} amonia{enter} amonium fosfat{enter} amina{enter} air{enter} asam oksalat{enter} amonium klorida{enter} asam askorbat{enter} asam salisilat{enter} amonium hidroksida{enter}
+Return
+:*:id59b::
+	Send, besi oksida{enter} besi sulfat{enter} barium sulfat{enter} butana{enter} butena{enter} besi bromida{enter} belerang heksaklorida{enter} barium iodida{enter} barium klorida{enter} besi klorid{enter} belerang trioksida{enter} barium hidroksida{enter}
+Return
 ::id59r::
 	Send, Raksa bromida{enter} Rubidium oksalat{enter}
 Return
@@ -525,6 +650,12 @@ Return
 	Send, Exclamation mark{enter}
 Return
 
+;[62] soal yang hilang
+
+::id63::
+	Send, question mark{enter}
+Return
+
 ::id64m::
 	Send, Malaysia{enter} Myanmar{enter}
 Return
@@ -541,12 +672,25 @@ Return
 ::id65n::
 	Send, narcissus{enter} nasturtium{enter} Norwegian flower{enter}
 Return
+::id65o::
+	Send, orchid{enter} oleander{enter} omithoalum{enter}
+Return
+
+::id66c::
+	Send, candytuft{enter} chicory{enter}
+Return
+::id66g::
+	Send, goldenrod{enter} gladiol{enter}
+Return
 
 ::id67g::
 	Send, google hangouts{enter}
 Return
 ::id67s::
-	Send, snapchat{enter} skype{enter}
+	Send, snapchat{enter} skype{enter} slack{enter} silent phone{enter}
+Return
+::id67t::
+	Send, telegram{enter} talkatone{enter}
 Return
 ::id67v::
 	Send, viber{enter} voxer{enter}
@@ -612,6 +756,9 @@ Return
 ::id76l::
 	Send, lance storm{enter}
 Return
+::id76s::
+	Send, steven richard{enter} shane mcmahon{enter} stone cold steve austin{enter} sin cara{enter}
+Return
 
 ::id77::
 	Send, Beriak dalam{enter}
@@ -640,6 +787,9 @@ Return
 ::id83::
 	Send, mie tiaw{enter}
 Return
+::id83l::
+	Send, lek tau suan{enter}
+Return
 
 ::id84d::
 	Send, dieng{enter}
@@ -657,6 +807,9 @@ Return
 
 ::id86a::
 	Send, Ades{enter} Aqua{enter}
+Return
+::id86g::
+	Send, good day{enter} guinness{enter} granita{enter}
 Return
 ::id86h::
 	Send, heineken{enter}
@@ -700,6 +853,9 @@ Return
 ::id94c::
 	Send, crystal maiden{enter} clockwer goblin{enter} centaur warchief{enter}
 Return
+::id94s::
+	Send, slardar{enter} skeleton king{enter}
+Return
 
 ::id95::
 	Send, margo city square{enter}
@@ -718,6 +874,9 @@ Return
 ::id97r::
 	Send, revolver{enter} rubber soul{enter}
 Return
+::id97t::
+	Send, the beatles - the white album -{enter}
+Return
 
 ::id98m::
 	Send, miami{enter}
@@ -730,6 +889,12 @@ Return
 	Send, nasi palekko{enter}
 Return
 
+::id100c::
+	Send, cyber mall{enter}
+Return
+::id100m::
+	Send, mx mall{enter} malang plaza{enter} mitra department store & supermarket{enter}
+Return
 ::id100s::
 	Send, sarinah department store{enter}
 Return
@@ -743,8 +908,14 @@ Return
 	Send, palembang indah mall{enter}
 Return
 
+::id103b::
+	Send, beverley mitchell{enter}
+Return
 ::id103g::
 	Send, george clooney{enter}
+Return
+::id103h::
+	Send, harrison ford{enter} hulk hogan{enter} humphrey bogart{enter}
 Return
 
 ::id104a1::
@@ -755,6 +926,9 @@ Return
 Return
 ::id104p::
 	Send, Phillip island{enter}
+Return
+::id104s::
+	Send, sepang{enter} sachsenring{enter} silverstone{enter}
 Return
 ::id104t::
 	Send, termas de rio hondo{enter}
@@ -793,6 +967,9 @@ Return
 
 ::id109a::
 	Send, asuncion{enter}
+Return
+::id109c::
+	Send, cayenne{enter} caracas{enter}
 Return
 ::id109b::
 	Send, bogota{enter} brasilia{enter} buenos aires{enter}
@@ -912,6 +1089,10 @@ Return
 	Send, Dua puluh kali{enter}
 Return
 
+::id122::
+	Send, langit-langit{enter}
+Return
+
 ::id123::
 	Send, Malam jumat{enter}
 Return
@@ -927,6 +1108,12 @@ Return
 Return
 ::id125f::
 	Send, Fam100{enter}
+Return
+::id125p::
+	Send, pancasila 5 dasar{enter}
+Return
+::id125s::
+	Send, sambungkata{enter} spyfall{enter}
 Return
 ;=====================================================================================================================
 
@@ -972,9 +1159,18 @@ Return
 ::id135j::
 	Send, jessica veranda tanumihardja{enter} jessica vania widjaja{enter}
 Return
+::id135n::
+	Send, neneng rosediana{enter} nabila ratna ayu azalia{enter} nadila cindi wantari{enter} nadhifa salsabila{enter} natalia{enter}
+Return
 
+::id136c::
+	Send, chaeyoung{enter}
+Return
 ::id136j::
 	Send, jihyo{enter} jeongyeon{enter}
+Return
+::id136s::
+	Send, sana{enter}
 Return
 
 ::id137b::
@@ -998,9 +1194,27 @@ Return
 ;=====================================================================================================================
 
 ; 139 -> Ibukota negara iklim tropis{enter}
+::id139h::
+	Send, hanoi{enter} havana{enter} harare{enter} honiara{enter}
+Return
 
+::id140e::
+	Send, euro{enter} escudo{enter}
+Return
+::id140g::
+	Send, guarani{enter} guilder{enter} gourde{enter}
+Return
+::id140k::
+	Send, kyat{enter} kroon{enter} krono{enter} kina{enter} kronu{enter} koruny{enter} kwacha{enter} kuna{enter} kip{enter}
+Return
 ::id140m::
 	Send, Meticai{enter} Manat{enter} Maloti{enter}
+Return
+::id140n::
+	Send, Naira{enter} Nakfa{enter} Ngultrum{enter}
+Return
+::id140r::
+	Send, real{enter} rial{enter} rand{enter} ruble{enter} rupiah{enter} rufiyaa{enter} riel{enter} riyal{enter} rupee{enter} rand{enter} ringgit
 Return
 
 ; 141 -> negara juara aff
@@ -1014,10 +1228,16 @@ Return
 Return
 
 ;hewan bertelur
-::id144::
+::id144c::
 	Send, Capung{cicak} cicak{enter}
 Return
+::id144j::
+	Send, jangkrik{enter}
+Return
 
+::id145r::
+	Send, ranau{enter} rajabasa{enter}
+Return
 ::id145s::
 	Send, sibayak{enter} sorikmarapi{enter}
 Return
@@ -1039,6 +1259,9 @@ Return
 ;=====================================================================================================================
 
 ;pendiri fb
+::id147c::
+	Send, chris hughes{enter}
+Return
 ::id147m::
 	Send, Mark zuckerberg{enter}
 Return
@@ -1063,7 +1286,7 @@ Return
 ;=====================================================================================================================
 
 ::id149::
-	Send, Dua puluh delapan oktober 1928
+	Send, Dua puluh delapan oktober 1928{enter}
 Return
 
 ::id150::
@@ -1098,7 +1321,9 @@ Return
 	Send, Kate middleton{enter}
 Return
 
-;; error 158 not found
+::id158::
+	Send,  setiap orang berhak untuk hidup serta berhak mempertahankan hidup dan kehidupannya{enter}
+Return
 
 ::id159::
 	Send, Kabul basuki{enter}
@@ -1288,8 +1513,46 @@ Return
 	Send, Sun bear{enter}
 Return
 
+::id206:: 
+	Send, Olaf{enter}
+Return
+
 ::id207::
 	Send, Mila kunis{enter}
+Return
+
+::id208:: 
+	Send, Up{enter} 
+Return
+
+::id209:: ;gak pernah muncul
+	Send, Setiap orang wajib menghormati hak asasi manusia orang lain dalam tertib kehidupan bermasyarakat, berbangsa, dan bernegara{enter}
+Return
+
+::id210d::
+	Send, dead man walking{enter}
+Return
+::id210h::
+	Send, hall of fame{enter}
+Return
+::id210m::
+	Send, Millionaires{enter}
+Return
+::id210w::
+	Send, we cry{enter}
+Return
+::id210y::
+	Send, you wont feel a thing{enter}
+Return
+
+::id211b::
+	Send, batam city square{enter}
+Return
+::id211n::
+	Send, nagoya hill{enter}
+Return
+::id211m::
+	Send, mega mall{enter}
 Return
 
 ::id212::
@@ -1304,11 +1567,35 @@ Return
 	Send, Love story{enter} Last kiss{enter} Long live{enter}
 Return
 
+::id215i::
+	Send, im yoon-ah{enter}
+Return
+::id215j::
+	Send, jessica jung{enter}
+Return
+::id215s::
+	Send, sunny{enter} sooyoung{enter} seohyun{enter}
+Return
+
 ::id216b::
 	Send, bondowoso{enter} blitar{enter} bojonegoro{enter} bangkalan{enter}
 Return
+::id216c::
+	Send, caruban{enter}
+Return
 ::id216k::
 	Send, Kanigoro{enter} Kraksaan{enter} Kota batu{enter} Kepanjen{enter}
+Return
+
+::id217m::
+	Send, mall lampung{enter}
+Return
+
+::id218a::
+	Send, anne{enter}
+Return
+::id218e::
+	Send, elizabeth i{enter} elizabeth ii{enter}
 Return
 
 ::id219s::
@@ -1316,10 +1603,6 @@ Return
 Return
 ::id219y::
 	Send, Yuddy chrisnandi{enter} Yasonna h. laoly{enter} Yohanan yambise{enter}
-Return
-
-::id218a::
-	Send, anne{enter}
 Return
 
 ::id220::
@@ -1330,8 +1613,16 @@ Return
 	Send, mace{enter}
 Return
 
+::id222::
+	Send, meriam bellina{enter}
+Return
+
 ::id223::
 	Send, buah naga{enter}
+Return
+
+::id224::
+	Send, Doraemon{enter}
 Return
 
 ::id225::
@@ -1342,12 +1633,20 @@ Return
 	Send, Guruh soekarno putra{enter}
 Return
 
+::id227::
+	Send, bj habibie{enter}
+Return
+
 ::id228::
 	Send, Mohammad hatta{enter}
 Return
 
 ::id229::
 	Send, abdurrahman wahid{enter}
+Return
+
+::id230::
+	Send, Megawati soekarno putri{enter}
 Return
 
 ::id231::
@@ -1364,6 +1663,22 @@ Return
 
 ::id234::
 	Send, Baboon{enter}
+Return
+
+::id235::
+	Send, jackfruit{enter}
+Return
+
+::id236::
+	Send, Thailand{enter}
+Return
+
+::id237::
+	Send, Vietnam{enter}
+Return
+
+::id238::
+	Send, Timor leste{enter}
 Return
 
 ::id239::
@@ -1386,9 +1701,74 @@ Return
 	Send, gudeg{enter}
 Return
 
+::id244::
+	Send, Rempeyek{enter}
+Return
+
+::id245::
+	Send, martabak manis{enter}
+Return
+
+::id246::
+	Send, Soto betawi{enter}
+Return
+
+::id247::
+	Send, coto makassar{enter}
+Return
+
+::id248::
+	Send, cireng{enter}
+Return
+
+::id249::
+	Send, ayam bakar madu{enter}
+Return
+
 ::id250::
 	Send, Pecel lele{enter}
 Return
+
+::id251b::
+	Send, belanda{enter} belgia{enter} bulgaria{enter}
+Return
+
+; [252] Nama-nama bintang
+;=====================================================================================================================
+::id252a::
+	Send, alpha centauri{enter} arcturus{enter} altair{enter} alpha crucis{enter} alphard{enter} alpha andromedae{enter} alpha cassiopeiae{enter} alpha ophiuchi{enter} aldebaran{enter}
+Return
+::id252b::
+	Send, beta carinae{enter} bellatrix{enter} betelgeuse{enter} beta ursae minoris{enter} beta centuri{enter}
+Return
+::id252c::
+	Send, canopus{enter}
+Return
+::id252d::
+	Send, denebola{enter}
+Return
+::id252e::
+	Send, epsilon canis majoris{enter}
+Return
+::id252f::
+	Send, fomalhaut{enter}
+Return
+::id252g::
+	Send, gamma draconis{enter} gamma crucis{enter} gamma velorum{enter} gamma geminorum{enter}
+Return
+::id252h::
+	Send, hamal{enter}
+Return
+::id252p::
+	Send, pollux{enter} polaris{enter} proxima centauri{enter} pistol star{enter}
+Return
+::id252r::
+	Send, rigel{enter}
+Return
+::id252v::
+	Send, vega{enter}
+Return
+;=====================================================================================================================
 
 ; [253] Nama-nama OS
 ;=====================================================================================================================
@@ -1397,6 +1777,9 @@ Return
 Return
 ::id253b::
 	Send, Blin linux{enter} Beos{enter} BPMK{enter} Bela{enter} B-free{enter} basic executive system{enter} Bintoo{enter} Bluelinux{enter} Bloody Stupid{enter} Bearops linux{enter}
+Return
+::id253c::
+	Send, cupid{enter} clarkconnect{enter} CCP (Computer Control Program){enter} cromix{enter} Censornet{enter} clearos{enter} college{enter} choices{enter} centos{enter}
 Return
 ::id253d::
 	Send, debian{enter} domain os{enter} dingOS{enter} DesktopBSD{enter} DRBL live{enter} Damn small linux{enter} dosket{enter} deep-water{enter} DNAlinux{enter} DTOS{enter} DEMOS{enter} Dragon linux{enter} Dracos{enter}
@@ -1407,8 +1790,17 @@ Return
 ::id253k::
 	Send, Kubuntu{enter} Kali linux{enter} kwort{enter} kerberos{enter} Kuki linux{enter} KeyKOS{enter} Knopperdisk{enter} Knoppmyth{enter} Kurumin{enter} Kanotix{enter} kiwi linux{enter} kaladix linux{enter} KateOS{enter} kongoni{enter} Klikit-Linux{enter} KRONOS{enter} knoppix{enter}
 Return
+::id253l::
+	Send, linux mint{enter} litrix{enter} linpus{enter} linux xp{enter} lg3d{enter} LinEspa{enter}
+Return
 ::id253s::
 	Send, S.Ha.R.K{enter} slackware{enter} SliTaz GNU/Linux{enter} SCI.Linux{enter} SimplyMEPIS{enter} Sun Wah{enter} shark{enter} Solbourne UNIX{enter} SINTRAN III{enter} ScottsNewOS{enter} Synapse{enter}
+Return
+::id253v::
+	Send, VLOS{enter} videolinux{enter} vm/vse{enter} versados{enter}  Visual Network OS{enter} vidalinux{enter} veloce os3{enter}
+Return
+::id253w::
+	Send, Windows 98 SE{enter} Windows 98{enter} Windows 7{enter} Windows 8{enter} Windows 10{enter} Windows Server 2008 R2{enter} Windows Server 2003 R2{enter} Windows Server 2003{enter} Windows Server 2008{enter} wolvix{enter} Windows vista{enter} Windows XP{enter} Windows Automotive{enter} Webfish linux{enter} Winmac{enter} Warlinux{enter} Windows NT{enter} Windows ME{enter} Winlinux 2001{enter} Wind River Linux{enter}
 Return
 ::id253x:: ;nama-nama os
 	Send, Xubuntu{enter} Xandros{enter} x-kernel{enter} Xstreamos{enter} Xinix{enter} Xinutop{enter} Xteam{enter} Xinu{enter} XDOS{enter} XTS{enter} Xarnoppix{enter} XOS{enter} Xaos{enter} Xenix{enter} Xfld{enter} xPud{enter} X/OS{enter}
@@ -1423,12 +1815,19 @@ Return
 	Send, picasa{enter} photoscape{enter} photoshine{enter}
 Return
 
+::id257o::
+	Send, opu daeng risaju{enter}
+Return
+
 ;;ras anjing
 ::id259c::
 	Send, chihuahua{enter}
 Return
 ::id259e::
 	Send, English bulldog{enter}
+Return
+::id259y::
+	Send, Yorkshire terrier{enter}
 Return
 
 ::id260::
@@ -1439,8 +1838,20 @@ Return
 	Send, rudy hartono kurniawan{enter}
 Return
 
+::id262::
+	Send, Winnie the pooh{enter}
+Return
+
+::id263::
+	Send, tarzan{enter}
+Return
+
 ::id264::
 	Send, Married life{enter}
+Return
+
+::id265::
+	Send, the script - breakeven{enter}
 Return
 
 ::id267d::
@@ -1465,16 +1876,40 @@ Return
 ::id270a::
 	Send, Austroloid{enter} ainu{enter}
 Return
+::id270b::
+	Send, bushman{enter}
+Return
+::id270k::
+	Send, kaukasoid{enter} kaukasoid alpin{enter} kaukasoid mediterania{enter} kaukasoid indik{enter} kaukasoid nordik{enter}
+Return
 ::id270m::
 	Send, Mongoloid{enter} mongoloid asia{enter} mongoloid amerika{enter} mongoloid malaya{enter}
+Return
+::id270p::
+	Send, polinesoid{enter}
+Return
+::id270v::
+	Send, veddoid{enter}
 Return
 
 ::id271::
 	Send, Envelope{enter}
 Return
 
+::id272::
+	Send, alphabet{enter}
+Return
+
 ::id273::
 	Send, Piano{enter}
+Return
+
+::id274::
+	Send, thumb{enter}
+Return
+
+::id275::
+	Send, empty{enter}
 Return
 
 ::id276::
@@ -1513,8 +1948,20 @@ Return
 	Send, Ninja hatori{enter}
 Return
 
+::id285::
+	Send, naruto{enter}
+Return
+
+::id286::
+	Send, one piece{enter}
+Return
+
 ::id287::
 	Send, Digimon{enter}
+Return
+
+::id288::
+	Send, Pokemon{enter}
 Return
 
 ::id289g::
@@ -1548,12 +1995,31 @@ Return
 	Send, Malang mujur{enter}
 Return
 
-::id299::
+::id299a::
 	Send, Australia{enter}
+Return
+::id299r::
+	Send, Republik demokrasi kongo{enter}
+Return
+
+; [307] Negara-negara penghasil perak terbesar di dunia
+::id300a::
+	Send, amerika serikat{enter} australia{enter}
+Return
+::id300b:: Send, Bolivia{enter} Return
+::id300c::
+	Send, china{enter} chili{enter}
+Return
+::id300p::
+	Send, Polandia{enter} Peru{enter}
 Return
 
 ::id301::
 	Send, Leonard kleinrock{enter}
+Return
+
+::id302::
+	Send, Anemometer{enter}
 Return
 
 ::id303l::
@@ -1563,8 +2029,20 @@ Return
 	Send, Sergey brin{enter}
 Return
 
+::id304::
+	Send, China{enter}
+Return
+
+::id305::
+	Send, kilimanjaro{enter}
+Return
+
 ::id306::
 	Send, Nil{enter}
+Return
+
+::id307::
+	Send, special weapons and tactics{enter}
 Return
 
 ::id308::
@@ -1576,7 +2054,7 @@ Return
 Return
 
 ::id310::
-	Send, tobey maguire{enter}
+	Send, Tobey maguire{enter}
 Return
 
 ::id311::
@@ -1603,6 +2081,9 @@ Return
 	Send, Albert einstein{enter}
 Return
 
+::id317l::
+	Send, lot polish{enter} lan airlines{enter} beverley mitchell{enter}
+Return
 ::id317t::
 	Send, Turkish airlines{enter} Tap air portugal{enter} thomson airways{enter} tam airlines{enter} taag angola{enter}
 Return
@@ -1610,6 +2091,9 @@ Return
 	Send, silkair{enter}
 Return
 
+::id318h::
+	Send, honda{enter} harley-davidson{enter} happy motorcycle{enter}
+Return
 ::id318v::
 	Send, vespa{enter} viar{enter}
 Return
@@ -1653,6 +2137,30 @@ Return
 	Send, twitty{enter}
 Return
 
+::id328c::
+	Send, cahaya logistik{enter}
+Return
+::id328g::
+	Send, go send{enter}
+Return
+::id328f::
+	Send, first logistics{enter}
+Return
+::id328p::
+	Send, pos indonesia{enter}
+Return
+
+::id329k::
+	Send, kelopak mata{enter} kumis{enter} kuku{enter} ketiak{enter} kulit{enter}
+Return
+::id329u::
+	Send, usus{enter}
+Return
+
+::id330::
+	Send, rowan atkinson{enter}
+Return
+
 ::id331::
 	 Send, Will smith{enter}
 Return
@@ -1677,7 +2185,15 @@ Return
 	 Send, Michael buble{enter}
 Return
 
+::id337::
+	Send, deddy corbuzier{enter}
+Return
+
 ::id338::
+	Send, telolet{enter}
+Return
+
+::id339::
 	Send, telolet{enter}
 Return
 
@@ -1689,12 +2205,23 @@ Return
 	Send, dedi kusnandar{enter}
 Return
 
+::id342s::
+	Send, smartfren{enter}
+Return
 ::id342x::
 	Send, xl axiata{enter}
 Return
 
 ::id343::
 	Send, Gerard way{enter}
+Return
+
+::id344d::
+	Send, Daging{enter}
+Return
+
+::id345j::
+	Send, Jerman{enter}
 Return
 
 ::id346::
@@ -1705,8 +2232,33 @@ Return
 	Send, Woody{enter}
 Return
 
+::id348::
+	Send, Jaymes{enter}
+Return
+
+::id349a::
+	Send, Ahmad dahlan{enter}
+Return
+::id349d::
+	Send, Dewi sartika{enter}
+Return
+::id349r::
+	Send, raden adjeng kartini{enter}
+Return
+::id349k::
+	Send, Ki hadjar dewantara{enter}
+Return
+
 ::id350::
-	Send, Sulawesi
+	Send, Sulawesi{enter}
+Return
+
+::id351::
+	Send, Kalimantan{enter}
+Return
+
+::id352::
+	Send, Jawa{enter}
 Return
 
 ::id353::
@@ -1715,6 +2267,9 @@ Return
 
 ::id354c::
 	Send, celebrity fitness{enter}
+Return
+::id354c::
+	Send, fitness first{enter}
 Return
 ::id354r::
 	Send, rai fitness{enter}
@@ -1726,6 +2281,13 @@ Return
 
 ::id356k:: ;pendiri gojek
 	Send, kevin aluwi{enter}
+Return
+::id356r::
+	Send, rama notowidigdo{enter}
+Return
+
+::id357::
+	Send, sayuti melik{enter}
 Return
 
 ::id358::
@@ -1745,6 +2307,9 @@ Return
 ::id360i::
 	Send, ikan lele{enter} ikan piranha{enter} ikan paus{enter}
 Return
+::id360r::
+	Send, rakun{enter}
+Return
 
 ::id361b::
 	Send, boediono{enter} bj habibie{enter}
@@ -1753,8 +2318,10 @@ Return
 	Send, hamzah haz{enter} hamengkubuwana ix{enter}
 Return
 
-
-::id362::
+::id362f::
+	Send, future perfect{enter} future perfect continuous{enter} future continuous tense{enter}
+Return
+::id362s::
 	Send, simple present tense{enter} simple future tense{enter} simple past tense{enter}
 Return
 
@@ -1766,6 +2333,10 @@ Return
 	Send, Indra lesmana{enter}
 Return
 
+::id365::
+	Send, Natasha wilona{enter}
+Return
+
 ::id366::
 	Send, tukul riyanto{enter}
 Return
@@ -1775,6 +2346,16 @@ Return
 Return
 ::id367s::
 	Send, shell{enter}
+Return
+::id367t::
+	Send, total{enter}
+Return
+
+::id368c::
+	Send, close up{enter} ciptadent{enter} colgate{enter}
+Return
+::id368f::
+	Send, formula{enter}
 Return
 
 ::id369a::
@@ -1809,6 +2390,9 @@ Return
 
 ::id372m::
 	Send, musicman{enter}
+Return
+::id372l::
+	Send, les paul{enter}
 Return
 
 ::id373::
@@ -1850,29 +2434,67 @@ Return
 ::id385m::
 	Send, Manchester{enter}
 Return
+::id385s::
+	Send, suez{enter} saimaa{enter}
+Return
+::id385v::
+	Send, Volga don{enter}
+Return
+
+::id386::
+	Send, Detasemen jala mangkara{enter}
+Return
 
 ::id387s::
 	Send, schopenhauer{enter} soren kierkegaard{enter}
+Return
+
+::id388::
+	Send, Nagita slavina{enter}
 Return
 
 ::id389::
 	Send, Fathia izzati{enter}
 Return
 
+::id390::
+	Send, Agung hapsah{enter}
+Return
+
+::id391b::
+	Send, batusangkar{enter} bukittinggi{enter}
+Return
 ::id391s::
 	Send, solok{enter} sawahlunto{enter} sikakap{enter} sumpur kudus{enter}
 Return
 
 ::id392u::
-	Send, uhlsport{enter} under armour{enter}
+	Send, uhlsport{enter} under armour{enter} umbro{enter}
 Return
 
+::id393g::
+	Send, griffin{enter} graeae{enter}
+Return
 ::id393p::
 	Send, Phyton{enter} Pegasus{enter}
 Return
 
+; Negara anggota pakta warsawa
+::id394b::
+	Send, bulgaria{enter}
+Return
+::id394c::
+	Send, cekoslowakia{enter}
+Return
+::id394p::
+	Send, polandia{enter}
+Return
+
+::id395o::
+	Send, ops{enter}
+Return
 ::id395n::
-	Send, Neptunus{enter}
+	Send, Neptune{enter}
 Return
 
 ::id396n::
@@ -1888,7 +2510,7 @@ Return
 Return
 
 ::id399::
-	 Send, Saitama{enter}
+	Send, Saitama{enter}
 Return
 
 ::id400::
@@ -1923,8 +2545,11 @@ Return
 	Send, Semayang{enter} sipin{enter} sentani{enter} singkarak{enter} sembuluh{enter} sindereng{enter} situ cileunca{enter} situ bagendit{enter} situ patenggang{enter}  situ langkung{enter} situ gintung{enter}
 Return
 
+::id405d::
+	Send, discovery shopping mall{enter}
+Return
 ::id405s::
-	Send, seminyak village{enter}
+	Send, seminyak village{enter} samasta village{enter}
 Return
 
 ::id406f::
@@ -1934,7 +2559,10 @@ Return
 ::id407k::
 	Send, Ketut{enter} Kadek{enter} Komang{enter}
 Return
-::id407::
+::id407m::
+	Send, made{enter}
+Return
+::id407n::
 	Send, Nyoman{enter} nengah{enter} ngakan{enter}
 Return
 ::id407p::
@@ -1968,12 +2596,21 @@ Return
 	Send, semarang{enter}
 Return
 
+::id414c::
+	Send, clocks{enter} color spectrum{enter} charlie brown{enter} cemeteries of london{enter}
+Return
 ::id414s::
 	Send, strawberry swing{enter} see you soon{enter} speed of sound{enter} shiver{enter}
+Return
+::id414y::
+	Send, yellow{enter}
 Return
 
 ::id415d::
 	Send, daesung{enter}
+Return
+::id415t::
+	Send, t.o.p{enter} taeyang{enter}
 Return
 
 ::id416::
@@ -1998,8 +2635,11 @@ Return
 	Send, nikita willy{enter}
 Return
 
-::id420::
+::id420m::
 	Send, Mie cakalang{enter}
+Return
+::id420r::
+	Send, Rica-rica{enter}
 Return
 
 ::id421d::
@@ -2050,6 +2690,9 @@ Return
 ::id430g::
 	 Send, garuda indonesia{enter}
 Return
+::id430s::
+	Send, sriwijaya air{enter} susi air{enter}
+Return
 ::id430x::
 	 Send, Xpress air{enter}
 Return
@@ -2062,10 +2705,13 @@ Return
 	Send, Sergio ramos{enter} Samuel Etoo{enter} Santi Cazorla{enter} Sami khedira{enter}
 Return
 ::id432r::
-	Send, Ronaldinho{enter}
+	Send, Ramires{enter} Robert lewandowski{enter} Radamel falcao{enter}
 Return
 ::id432l::
-	Send, luis suarez{enter} lionel messi{enter} luis figo{enter}
+	Send, luis suarez{enter} lionel messi{enter} luka modric{enter} leonardo bonucci{enter}
+Return
+::id432w::
+	Send, wesley sneidjer{enter}
 Return
 
 ::id433::
@@ -2082,6 +2728,9 @@ Return
 	Send, kings plaza{enter}
 Return
 
+::id435c::
+	Send, chanyeol{enter} chen{enter}
+Return
 ::id435y::
 	Send, yixing zhang{enter}
 Return
@@ -2096,8 +2745,20 @@ Return
 	Send, Sagitarius{enter} scorpio{enter}
 Return
 
+::id437a::
+	Send, Abraham ford{enter}
+Return
+::id437c::
+	Send, carol{enter} carl grimes{enter}
+Return
+::id437d::
+	Send, Daryl dixon{enter}
+Return
 ::id437g::
 	Send, Glenn rhee{enter}
+Return
+::id437m::
+	Send, michonner{enter} maggie greene{enter}
 Return
 ::id437r::
 	Send, rick grimes{enter} rosita espinosa{enter}
@@ -2124,6 +2785,9 @@ Return
 
 ::id442::
 	Send, Risol{enter}
+Return
+::id442p:: ;MIXMAX
+	Send, pantai slili{enter} pantai jogan{enter} pok tunggal beach{enter} pantai nglambor{enter}
 Return
 
 ::id443::
@@ -2163,6 +2827,9 @@ Return
 ::id450s::
 	Send, sate matang{enter}
 Return
+::id450u::
+	Send, ungkot kemamah{enter}
+Return
 ::id450a::
 	Send, ayam tangkap{enter}
 Return
@@ -2181,6 +2848,9 @@ Return
 
 ::id454i::
 	Send, Irene{enter}
+Return
+::id454j::
+	Send, joy{enter}
 Return
 ::id454y::
 	Send, Yeri{enter}
@@ -2218,6 +2888,14 @@ Return
 
 ::id461::
 	Send, Marc marquez{enter}
+Return
+
+::id462::
+	Send, jorge lorenzo{enter}
+Return
+
+::id463::
+	Send, valentino rossi{enter}
 Return
 
 ::id464::
@@ -2274,6 +2952,12 @@ Return
 	Send, Lipase{enter} Laktase{enter}
 Return
 
+::id476i::
+	Send, ilmu pengetahuan alam{enter} ilmu pengetahuan sosial{enter}
+Return
+::id476p::
+	Send, pendidikan kewarganegaraan{enter} pendidikan jasmani dan kesehatan
+Return
 ::id476t::
 	Send, teknologi informatika dan komunikasi{enter}
 Return
@@ -2381,6 +3065,9 @@ Return
 ::id502::
 	Send, Song ji hyo{enter}
 Return
+::id502r::
+	Send, rex{enter} rex carpet{enter} rhine lander rabbit{enter}
+Return
 
 ::id503::
 	Send, jungkook{enter}
@@ -2442,6 +3129,9 @@ Return
 ::id515g::
 	Send, garuda-1{enter}
 Return
+::id515i::
+	Send, inasat-1{enter} indostar i{enter} indostar ii{enter}
+Return
 ::id515p::
 	Send, palapa a1{enter} palapa a2{enter} palapa b2{enter} palapa b1{enter} palapa b2r{enter} palapa b2p{enter} palapa d{enter} palapa c1{enter} palapa c2{enter} palapa b4{enter}
 Return
@@ -2485,12 +3175,24 @@ Return
 	Send, gading{enter}
 Return
 
+::id522::
+	Send, belang{enter}
+Return
+
+::id523::
+	Send, nama{enter}
+Return
+
 ::id524::
-	Send, Muhammad bin musa al-khwarizmi{enter}
+	Send, muhammad bin musa al-khwarizmi{enter}
 Return
 
 ::id525::
 	Send, sinuhun pakubuwana iii{enter}
+Return
+
+::id526::
+	Send, adolf hitler{enter}
 Return
 
 ::id527::
@@ -2607,13 +3309,16 @@ Return
 Return
 
 ::id550p::
-	Send, pertentangan{enter} penegasan{enter} perbadingan{enter}
+	Send, pertentangan{enter} penegasan{enter} perbandingan{enter}
 Return
 
 ::id551:: ;negara termiskin
 	Send, Afrika tengah{enter}
 Return
 
+::id552j::
+	Send, jagoan neon{enter}
+Return
 ::id552v::
 	Send, vicks{enter}
 Return
@@ -2627,6 +3332,9 @@ Return
 
 ::id554a:: ;complete
 	Send, Ai haibara{enter} Ayumi yoshida{enter}
+Return
+::id554e::
+	Send, Eva kaiden{enter}
 Return
 ::id554j::
 	Send, Jimmy kudo{enter}
@@ -2660,8 +3368,11 @@ Return
 	Send, Nasi uduk{enter}
 Return
 
-::id562::
+::id562f::
 	Send, Fried rice{enter}
+Return
+::id562n::
+	Send, nasi uduk{enter}
 Return
 
 ::id563::
@@ -2691,6 +3402,9 @@ Return
 ; [569] Nama-nama ikan
 ::id569a::
 	Send, Arwana{enter}
+Return
+::id569d::
+	Send, dori{enter} dokkun{enter} diskus{enter}
 Return
 ::id569s::
 	Send, salmon{enter} sarai{enter}
@@ -2831,6 +3545,9 @@ Return
 Return
 ::id598p::
 	Send, Pesut mahakam{enter} penyu belimbing{enter} penyu sisik{enter}
+Return
+::id598s::
+	Send, simakobu{enter}
 Return
 
 ::id599l::
