@@ -1,14 +1,12 @@
 ﻿; ************************************************************
-; * P5D macro v.1.2 release 3 April 2017					 *
-; * Added new answer and correct some typo					 *
-; * Delete unnecessary command								 *
-; * Auto enter for common answers 							 *
+; * P5D macro v.1.2.1 release 17 April 2017					 *
 ; ************************************************************
 
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 #Warn  	; Enable warnings to assist with detecting common errors.
-SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SendMode Event  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+SetKeyDelay, 50
 
 ::mcr::
 	Send, `::id::{enter}{tab}Send,{enter}{backspace}Return{up 2}{left 2}`
