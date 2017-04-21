@@ -6,7 +6,7 @@
 #Warn  	; Enable warnings to assist with detecting common errors.
 SendMode Event ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
-SetKeyDelay, 25
+SetKeyDelay, 80
 
 MsgBox, 64,P5D macro v.2.0,P5D macro is activated,3
 
